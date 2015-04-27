@@ -41,12 +41,12 @@ if (typeof jQuery !== 'undefined') jQuery.fn.clara = function(c,o) { return clar
   
   <button type="button" id="textbutton1">Kim</button>
   <button type="button" id="textbutton2">Master</button>
-  <button type="button" id="textbutton3">usertext</button>
+  <button type="button" id="textbutton3">usertext1</button>
   
 <form>
 <br>
-First name:<br>
-<input type="text" name="usertext">
+Type text below:<br>
+<input type="text" name="usertext1" value="user text here">
 <br>
 </form>
 <p>Note that the form itself is not visible.</p>
@@ -68,7 +68,7 @@ First name:<br>
     
      $("#textbutton3").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
-      ctx('Textbox1#PolyMesh[name=Text]').set({"text":usertext});
+      ctx('Textbox1#PolyMesh[name=Text]').set({"text":"usertext1"});
     }});
   });
   </script>
