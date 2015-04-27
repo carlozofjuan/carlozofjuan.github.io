@@ -55,8 +55,6 @@ Type text below:<br>
 
 <p id="demo"></p>
 
-<p>Name: <input type="text" id="test" value="Mickey Mouse"></p>
-
 <script>
   function myFunction() {
     var x = document.getElementById("frm1");
@@ -67,6 +65,14 @@ Type text below:<br>
     }
     document.getElementById("demo").innerHTML = usertext1;
 }
+</script>
+
+<p>Name: <input type="text" id="test" value="Mickey Mouse"</p>
+<script>
+   $(document).ready(function(){
+      $("#textbutton3").click( function() {
+      alert("Value: " + 
+    $("#test").val));
 </script>
 
   <script>
@@ -90,10 +96,7 @@ Type text below:<br>
     $ var usertext1 = "";
     $ usertext1 = x.elements[0].value};
   */
-    $(document).ready(function(){
-      $("#textbutton3").click( function() {
-      alert("Value: " + 
-    $("#test").val));
+   
       
    /*
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
