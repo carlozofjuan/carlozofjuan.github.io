@@ -51,27 +51,9 @@ Type text below:<br>
 </form>
 
 <p>Also note that the default width of a text field is 20 characters.</p>
-<button onclick = "myFunction()">Try it</button>
 
-<p id="demo"></p>
 
-<script>
-  function myFunction() {
-    var x = document.getElementById("frm1");
-    var usertext1 = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        usertext1 += x.elements[i].value + "<br>";
-    }
-    document.getElementById("demo").innerHTML = usertext1;
-}
-</script>
-
-<p>Name: <input type="text" id="test" value="Mickey Mouse"</p>
-<script>
- //  $(document).ready(function(){
-     
-</script>
+<p>Enter text: <input type="text" id="usertext1" value="win!"</p>
 
   <script>
   $('#clara-sc-embed').clara({id:"da61a5cc-0bce-4474-8cc2-4b9d833cf399"});
@@ -88,13 +70,10 @@ Type text below:<br>
     }});
   }); 
    
-    var usertext1 = "hello";
-   
-//  usertext1 = $("#test").val();
-   
+
     $("#textbutton3").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
-      ctx('Textbox1#PolyMesh[name=Text]').set({"text":$("#test").val()});
+      ctx('Textbox1#PolyMesh[name=Text]').set({"text":$("#usertext1").val()});
     }});
   });
   
