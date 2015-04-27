@@ -70,9 +70,7 @@ Type text below:<br>
 <p>Name: <input type="text" id="test" value="Mickey Mouse"</p>
 <script>
  //  $(document).ready(function(){
-      $("#textbutton3").click( function() {
-      alert("Value: " + 
-    $("#test").val));
+     
 </script>
 
   <script>
@@ -97,13 +95,14 @@ Type text below:<br>
     $ usertext1 = x.elements[0].value};
   */
    
-      
-   /*
+   usertext1 = ("#test").val;
+   
+    $("#textbutton3").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":usertext1});
     }});
   });
-  */
+  
   </script>
     
   <center><small>This product configurator was build using <a href="http://clara.io">Clara.io</a> and it's new <a href="http://clara.io/learn/sdk/embedding">interactive WebGL embeds</a> feature.</small></center>
