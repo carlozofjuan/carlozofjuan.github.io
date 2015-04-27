@@ -89,17 +89,12 @@ Type text below:<br>
   }); 
    
     var usertext1 = "hello";
- /*
-  $ var x = document.getElementById("frm1"); 
-    $ var usertext1 = "";
-    $ usertext1 = x.elements[0].value};
-  */
    
-  usertext1 = $("#test").val();
+//  usertext1 = $("#test").val();
    
     $("#textbutton3").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
-      ctx('Textbox1#PolyMesh[name=Text]').set({"text":usertext1});
+      ctx('Textbox1#PolyMesh[name=Text]').set({"text":$("#test").val()});
     }});
   });
   
