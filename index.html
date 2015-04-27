@@ -56,8 +56,10 @@ if (typeof jQuery !== 'undefined') jQuery.fn.clara = function(c,o) { return clar
   $("#textbutton1").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":"Kim"});
-      ctx.exec("vray", "sceneSetup");
     }});
+    $('#clara-sc-embed').clara('script',{fn: function(ctx) {
+       ctx.exec("vray", "sceneSetup");
+    }});  
   });
   
     $("#textbutton2").click( function() {
