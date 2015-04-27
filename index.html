@@ -57,22 +57,15 @@ if (typeof jQuery !== 'undefined') jQuery.fn.clara = function(c,o) { return clar
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":"Kim"});
     }});
-    $('#clara-sc-embed').clara('script',{fn: function(ctx) {
-       ctx.exec("vray", "sceneSetup");
-    }});  
-    $('#clara-sc-embed').clara('script',{fn: function(ctx) {
-    ctx.exec("scene", "importGivenMaterial");
-    }}); 
   });
   
-    $("#textbutton2").click( function() {
+  $("#textbutton2").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":"Master"});
     }});
   }); 
    
-
-    $("#textbutton3").click( function() {
+  $("#textbutton3").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":$("#usertext1").val()});
     }});
