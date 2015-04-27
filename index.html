@@ -66,10 +66,11 @@ Type text below:<br>
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":"Master"});
     }});
   }); 
-  
+   
+    var testinput = "hello";
     $("#textbutton3").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
-      ctx('Textbox1#PolyMesh[name=Text]').set({"text":"usertext1"});
+      ctx('Textbox1#PolyMesh[name=Text]').set({"text":testinput});
     }});
   });
   </script>
