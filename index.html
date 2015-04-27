@@ -51,11 +51,12 @@ if (typeof jQuery !== 'undefined') jQuery.fn.clara = function(c,o) { return clar
   <script>
   //$('#clara-sc-embed').clara({id:"da61a5cc-0bce-4474-8cc2-4b9d833cf399"});
  $('#clara-sc-embed').clara({id:"51a21989-ac93-44da-950a-6f80d74b3c42"}); 
- $('#clara-sc-embed').clara({render:"vray"});  
+
   
   $("#textbutton1").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":"Kim"});
+      ctx.exec("vray", "sceneSetup");
     }});
   });
   
