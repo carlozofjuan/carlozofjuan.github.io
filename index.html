@@ -39,8 +39,19 @@ if (typeof jQuery !== 'undefined') jQuery.fn.clara = function(c,o) { return clar
   </tr>
   </table>
   
-  <button type="button" id="textbutton1">textbutton1!</button>
-  <button type="button" id="textbutton2">textbutton2!</button>
+  <button type="button" id="textbutton1">Kim</button>
+  <button type="button" id="textbutton2">Master</button>
+  <button type="button" id="textbutton3">usertext</button>
+  
+<form>
+<br>
+First name:<br>
+<input type="text" name="usertext">
+<br>
+</form>
+<p>Note that the form itself is not visible.</p>
+<p>Also note that the default width of a text field is 20 characters.</p>
+
   <script>
   $('#clara-sc-embed').clara({id:"da61a5cc-0bce-4474-8cc2-4b9d833cf399"});
   
@@ -53,6 +64,11 @@ if (typeof jQuery !== 'undefined') jQuery.fn.clara = function(c,o) { return clar
     $("#textbutton2").click( function() {
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":"Master"});
+    }});
+    
+     $("#textbutton3").click( function() {
+    $('#clara-sc-embed').clara('script',{fn: function(ctx) {
+      ctx('Textbox1#PolyMesh[name=Text]').set({"text":usertext});
     }});
   });
   </script>
