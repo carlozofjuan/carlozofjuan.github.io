@@ -60,6 +60,9 @@ if (typeof jQuery !== 'undefined') jQuery.fn.clara = function(c,o) { return clar
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
        ctx.exec("vray", "sceneSetup");
     }});  
+    $('#clara-sc-embed').clara('script',{fn: function(ctx) {
+    ctx.exec("scene", "importGivenMaterial");
+    }}); 
   });
   
     $("#textbutton2").click( function() {
