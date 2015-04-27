@@ -83,16 +83,11 @@ Type text below:<br>
   }); 
    
  //   var usertext1 = "hello";
- function myFunction() { 
-     var x = document.getElementById("frm1"); 
-     var usertext1 = ""; 
-     var i; 
-     for (i = 0; i < x.length ;i++) { 
-        usertext1 += x.elements[i].value + "<br>"; 
-    } 
-     document.getElementById("demo").innerHTML = usertext1; 
-
+ 
     $("#textbutton3").click( function() {
+    $ var x = document.getElementById("frm1"); 
+    $ var usertext1 = "";
+    $ usertext1 = x.elements[0].value};
     $('#clara-sc-embed').clara('script',{fn: function(ctx) {
       ctx('Textbox1#PolyMesh[name=Text]').set({"text":usertext1});
     }});
